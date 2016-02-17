@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int x;
+char ans;
+
+int main (){
+  do{
+    cout<< "give me the value of X: ";
+    cin>> x;
+
+      int ac=1;
+      for (int i=1 ; i<=x ; i++)
+          ac=ac*i;
+       cout<<"factorial: " <<ac <<endl;
+       cout<<"Would you like to do it again? (y/n): ";
+       cin>>ans;
+
+   } while (ans=='y');
+
+   if (ans=='n'){
+        cout << "Have a nice day :D " << endl;
+   }
+}
